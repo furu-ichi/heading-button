@@ -8,14 +8,17 @@
   padding-left: 125px;
 }
 
-.main__pattern-1 {
+// 共通クラス
+.base-font {
   color: #333;
   font-family: "Noto Sans JP";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 170%; /* 40.8px */
+}
 
+.main__pattern-1 {
   border-bottom: 3px solid #f8b819; // 実線の下線を設定
   // padding-bottom: 2px; // 文字と下線の隙間を調整
 }
@@ -23,26 +26,12 @@
 .main__pattern-2 {
   margin-top: 30px;
 
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
-
   border-bottom: 3px dashed #f8b819; // 破線の下線を設定
   // padding-bottom: 2px; // 文字と下線の隙間を調整
 }
 
 .main__pattern-3 {
   margin-top: 32px;
-
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
 
   // 背景色の設定
   background-color: #fabe00;
@@ -61,11 +50,6 @@
   margin-top: 30px;
 
   color: #fff;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
 
   // 背景色の設定
   // ※グラデーションの場合は、「backgounrd-color」ではないこと注意
@@ -87,13 +71,6 @@
 .main__pattern-5 {
   margin-top: 30px;
 
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
-
   // 左側に線分を設定
   border-left: 5px solid #f8b819;
 
@@ -107,13 +84,6 @@
 
 .main__pattern-6 {
   margin-top: 30px;
-
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
 
   // 文字の下にだけ下線をひきたい時は、border-bottomではなくtext-decoration
   text-decoration: underline;
@@ -130,13 +100,6 @@
   margin-top: 30px;
   vertical-align: top;
 
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 200%; /* 48px */
-
   // 背景色を設定
   background-color: #fabe00;
 
@@ -152,13 +115,6 @@
   margin-top: 30px;
 
   & > span {
-    color: #333;
-    font-family: "Noto Sans JP";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 200%; /* 48px */
-
     // 背景色を設定
     background-color: #fabe00;
 
@@ -180,13 +136,6 @@
   // https://front-end-tools.com/generateTriangle/
 
   margin-top: 30px;
-
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
 
   // 背景色の設定
   background-color: #fabe00;
@@ -223,13 +172,6 @@
 
   margin-top: 38px;
 
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
-
   position: relative;
 
   &::after {
@@ -254,13 +196,6 @@
 
   margin-top: 38px;
 
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
-
   position: relative;
 
   border-bottom: 2px solid #fabe00;
@@ -271,20 +206,12 @@
     bottom: -2px;
     width: 18%;
     height: 2px;
-    background: red;
-    // #F6820E
+    background: #f6820e;
   }
 }
 
 .main__pattern-10 {
   margin-top: 30px;
-
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
 
   // 疑似要素の為にスペース空ける
   padding-left: 20px;
@@ -300,5 +227,132 @@
     top: 50%;
     transform: translateY(-50%);
     left: 10px;
+  }
+}
+
+.main__pattern-11 {
+  margin-top: 30px;
+
+  // 疑似要素の為にスペースをあける
+  padding-bottom: 10px;
+
+  position: relative;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 52px;
+    height: 4px;
+    background-color: #f8b819;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+}
+
+.main__pattern-12 {
+  margin-top: 30px;
+
+  // 疑似要素の為にスペースを空ける
+  padding-left: 35px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18.014px;
+    height: 14.157px;
+    background-image: url(../img/check.png);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+  }
+}
+
+.main__pattern-13 {
+  margin-top: 30px;
+
+  // 疑似要素の為にスペースを空ける
+  padding-right: 29px;
+  display: inline-block;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/glass.png);
+    background-size: contain;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.main__pattern-14 {
+  margin-top: 30px;
+
+  // width: fit-content;
+  // margin-right: auto;
+  // margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    // position: absolute; // これは不要
+    content: "";
+    width: 3px;
+    height: 38px;
+    background-color: #f8b819;
+  }
+
+  &::before {
+    transform: rotate(-30deg);
+    margin-right: 12px;
+  }
+
+  &::after {
+    transform: rotate(30deg);
+    margin-left: 12px;
+  }
+}
+
+.main__pattern-15 {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 132px;
+    height: 3px;
+    background-color: #f8b819;
+  }
+
+  &::before {
+    margin-left: 20px;
+  }
+
+  &::after {
+    margin-right: 20px;
   }
 }

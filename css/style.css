@@ -8,35 +8,26 @@
   padding-left: 125px;
 }
 
-.main__pattern-1 {
+.base-font {
   color: #333;
   font-family: "Noto Sans JP";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 170%; /* 40.8px */
+}
+
+.main__pattern-1 {
   border-bottom: 3px solid #f8b819;
 }
 
 .main__pattern-2 {
   margin-top: 30px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   border-bottom: 3px dashed #f8b819;
 }
 
 .main__pattern-3 {
   margin-top: 32px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   background-color: #fabe00;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -52,11 +43,6 @@
 .main__pattern-4 {
   margin-top: 30px;
   color: #fff;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   background-image: -webkit-gradient(linear, left top, right top, from(#f5810e), to(#fabe00));
   background-image: linear-gradient(90deg, #f5810e 0%, #fabe00 100%);
   border-radius: 3px;
@@ -73,12 +59,6 @@
 
 .main__pattern-5 {
   margin-top: 30px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   border-left: 5px solid #f8b819;
   padding-left: 12px;
   display: -webkit-box;
@@ -91,12 +71,6 @@
 
 .main__pattern-6 {
   margin-top: 30px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   text-decoration: underline;
   text-decoration-thickness: 10px;
   text-decoration-color: #ffdd73;
@@ -108,12 +82,6 @@
 .main__pattern-7-1 {
   margin-top: 30px;
   vertical-align: top;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 200%; /* 48px */
   background-color: #fabe00;
   padding-right: 8px;
   padding-left: 8px;
@@ -124,12 +92,6 @@
   margin-top: 30px;
 }
 .main__pattern-7-2 > span {
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 200%; /* 48px */
   background-color: #fabe00;
   display: inline-block;
   padding-right: 8px;
@@ -138,12 +100,6 @@
 
 .main__pattern-8 {
   margin-top: 30px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   background-color: #fabe00;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -172,12 +128,6 @@
 
 .main__pattern-9-1 {
   margin-top: 38px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   position: relative;
 }
 .main__pattern-9-1::after {
@@ -193,12 +143,6 @@
 
 .main__pattern-9-2 {
   margin-top: 38px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   position: relative;
   border-bottom: 2px solid #fabe00;
 }
@@ -208,17 +152,11 @@
   bottom: -2px;
   width: 18%;
   height: 2px;
-  background: red;
+  background: #f6820e;
 }
 
 .main__pattern-10 {
   margin-top: 30px;
-  color: #333;
-  font-family: "Noto Sans JP";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 170%; /* 40.8px */
   padding-left: 20px;
   position: relative;
 }
@@ -232,4 +170,119 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 10px;
+}
+
+.main__pattern-11 {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+.main__pattern-11::before {
+  position: absolute;
+  content: "";
+  width: 52px;
+  height: 4px;
+  background-color: #f8b819;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+
+.main__pattern-12 {
+  margin-top: 30px;
+  padding-left: 35px;
+  position: relative;
+}
+.main__pattern-12::before {
+  position: absolute;
+  content: "";
+  width: 18.014px;
+  height: 14.157px;
+  background-image: url(../img/check.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 8px;
+}
+
+.main__pattern-13 {
+  margin-top: 30px;
+  padding-right: 29px;
+  display: inline-block;
+  position: relative;
+}
+.main__pattern-13::before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/glass.png);
+  background-size: contain;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.main__pattern-14 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.main__pattern-14::before, .main__pattern-14::after {
+  content: "";
+  width: 3px;
+  height: 38px;
+  background-color: #f8b819;
+}
+.main__pattern-14::before {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  margin-right: 12px;
+}
+.main__pattern-14::after {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  margin-left: 12px;
+}
+
+.main__pattern-15 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.main__pattern-15::before, .main__pattern-15::after {
+  content: "";
+  width: 132px;
+  height: 3px;
+  background-color: #f8b819;
+}
+.main__pattern-15::before {
+  margin-left: 20px;
+}
+.main__pattern-15::after {
+  margin-right: 20px;
 }
